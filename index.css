@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+
+:root {
+    --clr-primary-5: hsl(205, 78%, 60%);
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+    --transition: all 0.3s linear;
+    --spacing: 0.1rem;
+    --radius: 0.25rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(28, 9, 9, 0.862);
+    --max-width: 370px;
+    --fixed-width: 620px;
+}
+main {
+    margin-top: 100px;
+    min-height: 10vh;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;    
+  }
+
+  .underline {
+    height: 0.25rem;
+    width: 5rem;
+    background: var(--clr-primary-5);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.container{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    width: 80vw;
+    max-width: var(--fixed-width);
+    
+}
+
+.tittle{
+    margin-bottom: 25px;
+    
+}
+
+.review {
+    border: 2px;
+    background: var(--clr-white);
+    padding: 1.5rem 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--light-shadow);
+    transition: var(--transition);
+    text-align: center;
+    background-color: rgba(132, 158, 121, 0.535);
+  }
+
+.img-container{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+
+
+.review:hover {
+    box-shadow: var(--dark-shadow);
+  }
+#person{
+    margin-top: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+}
+#name{
+    font-size: 25px;
+    margin-bottom: 5px;
+    background: transparent;
+    border-color: transparent;
+
+}
+#job{
+    color: rgba(21, 133, 133, 0.947);
+    font-family:"Arial narrow";
+    margin-bottom: 10px;
+    background: transparent;
+    border-color: transparent;
+}
+#info{
+    color: grey;
+    background: transparent;
+    border-color: transparent;
+}
+
+.button-container{
+    margin-top: 20px;
+    background: transparent;
+    border-color: transparent;
+}
+
+.prev, .next{
+    border-radius: 30%;
+    color: rgb(4, 171, 171);
+    margin-top: 20px;
+    width: 30px;
+    height: 30px;
+    font-size: 1.25rem;
+    background: transparent;
+    border-color: transparent;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    box-shadow: var(--light-shadow);
+    transition: var(--transition);
+}
+.prev:hover,.next:hover{
+    box-shadow: var(--dark-shadow);
+    
+}
+.randomButton{
+    border-radius: 5px;
+    font-size: medium;
+    margin-top: 10px;
+    height: 50px;
+    width: 120px;
+    background-color: red;
+    box-shadow: var(--light-shadow);
+    transition: var(--transition);
+    background: transparent;
+    border-color: transparent;
+    
+}
+
+.randomButton:hover{
+    box-shadow: var(--dark-shadow);
+}
